@@ -624,3 +624,30 @@ footer {
   }
 
 }
+
+@media (max-width: 486px) {
+
+  .topnav.responsive{
+    transform: translateX(0%);
+  }
+
+  .hero-headline {
+    font-size: 38px;
+    white-space: normal;
+  }
+
+  .hero-text {
+    width: unset;
+    font-size: 1rem;
+  }
+
+  .hero-img img {
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  .modal-body {
+    padding: 15px 8%;
+    margin: 30px auto;
+  }
+}
