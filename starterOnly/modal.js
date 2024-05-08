@@ -77,7 +77,7 @@ function validInputs() {
   const quantityValue = quantityInput.value.trim();
 
   if (!regexName.test(firstNameValue)) {
-    setErrorFor(firstNameUser, 'Saisissez votre prénom (2 caractére minimum)');
+    setErrorFor(firstNameUser, 'Veuillez entrer 2 caractères ou plus pour le champ du prénom.');
     valid = false;
   } else {
   
@@ -85,7 +85,7 @@ function validInputs() {
   }
 
   if (!regexName.test(lastNameValue)) {
-    setErrorFor(lastNameUser, 'Saisissez votre nom de famille (2 caractére minimum) ');
+    setErrorFor(lastNameUser, 'Veuillez entrer 2 caractères ou plus pour le champ du nom.');
     valid = false;
   } else {
     setSuccessFor(lastNameUser);
@@ -99,7 +99,7 @@ function validInputs() {
   }
 
   if (!regexDate.test(birthdateValue)) {
-    setErrorFor(birthdateUser, 'date de naissance non valide (minimum 18 ans)');
+    setErrorFor(birthdateUser, 'Vous devez entrer votre date de naissance.');
     valid = false;
   } else {
     setSuccessFor(birthdateUser);
@@ -150,7 +150,7 @@ function isLocationSelected() {
 }
 
   if (!checkboxInput.checked) {
-    setErrorFor(checkboxInput, 'Veuillez acceptez les condition utilisation');
+    setErrorFor(checkboxInput, 'Vous devez vérifier que vous acceptez les termes et conditions.');
     valid = false;
   } else {
     setSuccessFor(checkboxInput);
