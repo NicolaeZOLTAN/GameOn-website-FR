@@ -56,7 +56,9 @@
         <div class="content">
           <span class="close"></span>
           <div class="modal-body">
+
             <form
+              id="formulaire"
               name="reserve"
               action="index.html"
               method="get"
@@ -72,6 +74,9 @@
                   id="first"
                   name="first"
                   minlength="2"/><br>
+
+                  <div class="form-error"></div>
+
               </div>
 
               <div
@@ -83,6 +88,8 @@
                   type="text"
                   id="last"
                   name="last"/><br>
+
+                  <div class="form-error"></div>
               </div>
 
               <div
@@ -91,9 +98,10 @@
 
                 <input
                   class="text-control"
-                  type="email"
                   id="email"
                   name="email"/><br>
+
+                  <div class="form-error"></div>
               </div>
 
               <div
@@ -106,84 +114,54 @@
                   id="birthdate"
                   name="birthdate"/><br>
 
+                  <div class="form-error"></div>
+
               </div>
-              <div
-                class="formData">
-                <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
-                
-                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
+              <div class="formData">
+
+                <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label>
+
+                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"><br>
+
+                <div class="form-error"></div>
+
               </div>
+
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
 
-              <div
-                class="formData">
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location1"
-                  name="location"
-                  value="New York"/>
+              <div class="formData" id="locationRadios">
+
+                <input class="checkbox-input" type="radio" id="location1" name="location" value="New York" />
 
                 <label class="checkbox-label" for="location1">
+
                   <span class="checkbox-icon"></span>
                   New York</label>
-
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location2"
-                  name="location"
-                  value="San Francisco"/>
-
+                <input class="checkbox-input" type="radio" id="location2" name="location" value="San Francisco" />
                 <label class="checkbox-label" for="location2">
                   <span class="checkbox-icon"></span>
                   San Francisco</label>
-
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location3"
-                  name="location"
-                  value="Seattle"/>
-
+                <input class="checkbox-input" type="radio" id="location3" name="location" value="Seattle" />
                 <label class="checkbox-label" for="location3">
                   <span class="checkbox-icon"></span>
                   Seattle</label>
-
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location4"
-                  name="location"
-                  value="Chicago"/>
-
+                <input class="checkbox-input" type="radio" id="location4" name="location" value="Chicago" />
                 <label class="checkbox-label" for="location4">
                   <span class="checkbox-icon"></span>
                   Chicago</label>
-
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location5"
-                  name="location"
-                  value="Boston"/>
-
+                <input class="checkbox-input" type="radio" id="location5" name="location" value="Boston" />
                 <label class="checkbox-label" for="location5">
                   <span class="checkbox-icon"></span>
                   Boston</label>
-
-                <input
-                  class="checkbox-input"
-                  type="radio"
-                  id="location6"
-                  name="location"
-                  value="Portland"/>
-
+                <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
                 <label class="checkbox-label" for="location6">
                   <span class="checkbox-icon"></span>
                   Portland</label>
+                  
+                <br>
+                <div class="form-error">Vous devez choisir une localisation!</div>
               </div>
-
+  
               <div
                 class="formData">
                 <input
@@ -202,14 +180,26 @@
                   <span class="checkbox-icon"></span>
                   Je souhaite être prévenu des prochains évènements.
                 </label>
+                <div class="form-error"></div>
                 <br>
               </div>
+
               <input
                 class="btn-submit"
                 type="submit"
                 class="button"
                 value="C'est parti"/>
+
             </form>
+
+            <!-- Ajouter confirmation quand envoi réussi  -->
+            <form id="modal-inscription">
+              <div class="msg-inscription">
+                <h2>Merci pour votre inscription</h2>
+              </div>
+              <input class="btn-submit" type="submit" value="Fermer">
+            </form>
+
           </div>
         </div>
       </div>

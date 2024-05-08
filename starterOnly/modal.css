@@ -68,6 +68,45 @@ img {
   display: none;
 }
 
+/* code ajouté  */
+.form-error {
+  display: none;
+}
+
+.error .form-error {
+  display: block;
+  color: red;
+  font-size: 12px;
+}
+
+.error input {
+  border: red solid 2px;
+}
+
+#modal-inscription {
+  display: none;
+}
+
+.msg-inscription {
+  height: 670px;
+  display: flex;
+  /*center horizontally*/
+  justify-content: center;
+  /*center vertically*/
+  align-items: center;
+
+}
+
+.msg-inscription h2 {
+  width: 274px;
+  font-size: 36px;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+  white-space: wrap;
+}
+ /* /////////////////////// */
+
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
