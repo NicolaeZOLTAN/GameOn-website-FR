@@ -29,3 +29,10 @@ function closeModal() {
 close.addEventListener("click", closeModal);
 
 
+// Partie Formulaire
+const firstNameUser = document.getElementById("first");
+const lastNameUser = document.getElementById("last");
+const emailUser = document.getElementById("email");
+const birthdateUser = document.getElementById("birthdate");
+const quantityUser = document.getElementById("quantity");
+const checkbox = document.getElementById("checkbox1");
