@@ -609,3 +609,18 @@ footer {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 630px){
+
+  .hero-headline {
+    font-size: 45px;
+    white-space: normal;
+  }
+
+
+  .hero-text {
+    width: unset;
+    font-size: 1rem;
+  }
+
+}
